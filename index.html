@@ -7,11 +7,7 @@
 <title>Mel Dalmao | Marketing Digital</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-<!-- AOS -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <style>
@@ -19,7 +15,7 @@
 body{
     background:#f8f5f0;
     color:#333;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:system-ui, sans-serif;
 }
 
 html{
@@ -27,7 +23,6 @@ html{
 }
 
 /* NAVBAR */
-
 .navbar{
     background:white;
 }
@@ -43,25 +38,26 @@ html{
 }
 
 /* HERO */
-
 .hero{
     background:linear-gradient(135deg,#f7eee6,#ffffff);
-    padding:120px 20px;
+    padding:140px 20px;
     text-align:center;
 }
 
 .hero img{
-    width:180px;
-    height:180px;
+    width:200px;
+    height:200px;
     object-fit:cover;
     border-radius:50%;
     margin-bottom:30px;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+    border:4px solid white;
 }
 
 .hero h1{
-    font-size:4rem;
-    font-weight:bold;
+    font-size:3.2rem;
+    font-weight:800;
+    letter-spacing:-1px;
 }
 
 .hero p{
@@ -70,7 +66,6 @@ html{
 }
 
 /* SECCIONES */
-
 .section{
     padding:80px 0;
 }
@@ -79,8 +74,7 @@ h2{
     font-weight:bold;
 }
 
-/* TARJETAS */
-
+/* CARDS */
 .card{
     border:none;
     overflow:hidden;
@@ -97,18 +91,25 @@ h2{
 .card img{
     height:230px;
     object-fit:cover;
+    width:100%;
+    transition:0.4s;
+}
+
+.card:hover img{
+    transform:scale(1.05);
 }
 
 /* BADGES */
-
 .badge{
-    padding:12px 18px;
+    background:#222;
+    padding:10px 16px;
+    border-radius:20px;
     margin:6px;
-    font-size:1rem;
+    font-size:0.95rem;
+    font-weight:500;
 }
 
 /* FOOTER */
-
 footer{
     background:#222;
     color:white;
@@ -128,80 +129,47 @@ footer i{
 <body>
 
 <!-- NAVBAR -->
-
 <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
-
 <div class="container">
 
 <a class="navbar-brand fw-bold" href="#">Mel Dalmao</a>
 
-<button class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
-
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 <span class="navbar-toggler-icon"></span>
-
 </button>
 
 <div class="collapse navbar-collapse" id="menu">
-
 <ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-<a class="nav-link" href="#sobre">Sobre mí</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#servicios">Servicios</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#proyectos">Proyectos</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#habilidades">Habilidades</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#contacto">Contacto</a>
-</li>
+<li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí</a></li>
+<li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+<li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+<li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
 
 </ul>
-
 </div>
 
 </div>
-
 </nav>
 
 <!-- HERO -->
-
 <section class="hero">
 
 <div class="container">
 
-<img src="Yo.png" alt="Mel Dalmao">
+<img src="yoyo.jpg" alt="Mel Dalmao">
 
-<h1 data-aos="fade-up">
-Marketing Digital
-</h1>
+<h1 data-aos="fade-up">Marketing Digital</h1>
 
 <p class="lead mt-4" data-aos="fade-up">
-
 Campañas publicitarias, diseño de contenido,
 branding y estrategias para redes sociales
 que impulsan marcas.
-
 </p>
 
-<a href="#proyectos"
-class="btn btn-dark btn-lg mt-4"
-data-aos="zoom-in">
-
+<a href="#proyectos" class="btn btn-dark btn-lg mt-4" data-aos="zoom-in">
 Ver Proyectos
-
 </a>
 
 </div>
@@ -209,317 +177,170 @@ Ver Proyectos
 </section>
 
 <!-- SOBRE MI -->
-
 <section class="section" id="sobre">
-
 <div class="container">
 
-<h2 class="mb-4" data-aos="fade-right">
-
-Sobre mí
-
-</h2>
+<h2 class="mb-4" data-aos="fade-right">Sobre mí</h2>
 
 <p data-aos="fade-up">
-
 Soy especialista en Marketing Digital y Comunicación Visual.
 Me apasiona ayudar a marcas y emprendimientos a crecer mediante
-estrategias creativas, diseño gráfico, contenido para redes
-sociales y campañas publicitarias enfocadas en resultados.
-
+estrategias creativas, diseño gráfico y campañas enfocadas en resultados.
 </p>
 
 </div>
-
 </section>
 
 <!-- SERVICIOS -->
-
 <section class="section bg-white" id="servicios">
-
 <div class="container">
 
-<h2 class="text-center mb-5" data-aos="fade-up">
-
-Servicios
-
-</h2>
+<h2 class="text-center mb-5" data-aos="fade-up">Servicios</h2>
 
 <div class="row">
 
 <div class="col-md-4 mb-4">
-
 <div class="card p-4 text-center" data-aos="fade-up">
-
 <h2>📱</h2>
-
 <h4>Redes Sociales</h4>
-
-<p>
-
-Planificación, calendario de contenido,
-creación de publicaciones y gestión de comunidades.
-
-</p>
-
+<p>Planificación y gestión de contenido.</p>
 </div>
-
 </div>
 
 <div class="col-md-4 mb-4">
-
 <div class="card p-4 text-center" data-aos="fade-up" data-aos-delay="150">
-
 <h2>🎨</h2>
-
 <h4>Diseño Gráfico</h4>
-
-<p>
-
-Diseño de piezas para Instagram,
-Facebook, historias, reels y publicidad.
-
-</p>
-
+<p>Piezas para redes y branding.</p>
 </div>
-
 </div>
 
 <div class="col-md-4 mb-4">
-
 <div class="card p-4 text-center" data-aos="fade-up" data-aos-delay="300">
-
 <h2>📢</h2>
-
 <h4>Publicidad Digital</h4>
-
-<p>
-
-Campañas en Meta Ads orientadas
-a generar ventas y captar clientes.
-
-</p>
-
+<p>Campañas Meta Ads enfocadas en resultados.</p>
+</div>
 </div>
 
 </div>
 
 </div>
-
-</div>
-
 </section>
 
 <!-- PROYECTOS -->
-
 <section class="section" id="proyectos">
-
 <div class="container">
 
-<h2 class="text-center mb-5" data-aos="fade-up">
-
-Proyectos Destacados
-
-</h2>
+<h2 class="text-center mb-5" data-aos="fade-up">Proyectos Destacados</h2>
 
 <div class="row">
 
 <div class="col-md-4 mb-4">
-
 <div class="card" data-aos="zoom-in">
 
-<img src="gato.png">
+<img src="campana1.png">
 
 <div class="card-body">
-
 <h5>Campaña Miau</h5>
-
-<p>
-
-Lanzamiento de alimento para gatos.
-Creación de identidad visual y contenido.
-
-</p>
-
+<p>Lanzamiento de alimento para gatos.</p>
+<a href="#" class="btn btn-outline-dark btn-sm mt-2">Ver caso</a>
 </div>
 
 </div>
-
 </div>
 
 <div class="col-md-4 mb-4">
-
 <div class="card" data-aos="zoom-in" data-aos-delay="150">
 
-<img src="alma.png">
+<img src="campana2.png">
 
 <div class="card-body">
-
 <h5>Campaña Alma</h5>
-
-<p>
-
-Marca de ropa artesanal.
-Diseño gráfico y estrategia digital.
-
-</p>
-
+<p>Marca de ropa artesanal.</p>
+<a href="#" class="btn btn-outline-dark btn-sm mt-2">Ver caso</a>
 </div>
 
 </div>
-
 </div>
 
 <div class="col-md-4 mb-4">
-
 <div class="card" data-aos="zoom-in" data-aos-delay="300">
 
-<img src="solaris.png">
+<img src="campana3.png">
 
 <div class="card-body">
-
 <h5>Campaña Solaris</h5>
+<p>Protector solar.</p>
+<a href="#" class="btn btn-outline-dark btn-sm mt-2">Ver caso</a>
+</div>
 
-<p>
-
-Lanzamiento de protector solar.
-Publicidad en redes sociales.
-
-</p>
-
+</div>
 </div>
 
 </div>
 
 </div>
-
-</div>
-
-</div>
-
 </section>
 
 <!-- HABILIDADES -->
-
 <section class="section bg-white" id="habilidades">
-
 <div class="container text-center">
 
-<h2 class="mb-5" data-aos="fade-up">
+<h2 class="mb-5" data-aos="fade-up">Habilidades</h2>
 
-Habilidades
-
-</h2>
-
-<span class="badge bg-dark">Canva</span>
-
-<span class="badge bg-dark">Photoshop</span>
-
-<span class="badge bg-dark">Illustrator</span>
-
-<span class="badge bg-dark">Meta Ads</span>
-
-<span class="badge bg-dark">Marketing Digital</span>
-
-<span class="badge bg-dark">Copywriting</span>
-
-<span class="badge bg-dark">Branding</span>
-
-<span class="badge bg-dark">Community Manager</span>
+<span class="badge">Canva</span>
+<span class="badge">Photoshop</span>
+<span class="badge">Meta Ads</span>
+<span class="badge">Copywriting</span>
+<span class="badge">Branding</span>
+<span class="badge">Community Manager</span>
 
 </div>
-
 </section>
 
 <!-- CONTACTO -->
-
 <section class="section" id="contacto">
-
 <div class="container text-center">
 
-<h2 class="mb-4" data-aos="fade-up">
+<h2 class="mb-4">Trabajemos juntos</h2>
 
-Trabajemos juntos
+<p><i class="bi bi-envelope-fill"></i> meldigital@gmail.com</p>
+<p><i class="bi bi-instagram"></i> @meldigital</p>
 
-</h2>
-
-<p>
-
-<i class="bi bi-envelope-fill"></i>
-
-meldigital@gmail.com
-
-</p>
-
-<p>
-
-<i class="bi bi-instagram"></i>
-
-@meldigital
-
-</p>
-
-<p>
-
-<i class="bi bi-linkedin"></i>
-
-Melina Dalmao
-
-</p>
-
-<a href="mailto:meldigital@gmail.com"
-class="btn btn-dark btn-lg mt-3">
-
+<a href="mailto:meldigital@gmail.com" class="btn btn-dark btn-lg mt-3">
 Contactarme
-
 </a>
 
 </div>
-
 </section>
 
 <!-- FOOTER -->
-
 <footer>
 
-<h4>Melina Dalmao</h4>
-
-<p>
-
-Marketing Digital • Diseño Gráfico • Branding
-
-</p>
+<h4>Mel Dalmao</h4>
+<p>Marketing Digital • Diseño • Branding</p>
 
 <div>
-
 <i class="bi bi-instagram"></i>
-
 <i class="bi bi-linkedin"></i>
-
 <i class="bi bi-envelope-fill"></i>
-
 </div>
 
-<p class="mt-3">
-
-© 2026 Melina Dalmao
-
-</p>
+<p class="mt-3">© 2026 Mel Dalmao</p>
 
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <script>
-
 AOS.init({
     duration:800,
     once:true
 });
-
 </script>
 
 </body>
 </html>
+    
