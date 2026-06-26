@@ -129,6 +129,57 @@ footer i{
     font-size:22px;
     margin:0 8px;
 }
+footer i{
+    font-size:22px;
+    margin:0 8px;
+}
+
+/* ===== MODO OSCURO ===== */
+
+body.dark-mode{
+    background:#121212;
+    color:#f5f5f5;
+}
+
+body.dark-mode .navbar{
+    background:#1e1e1e;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link{
+    color:white;
+}
+
+body.dark-mode .nav-link:hover{
+    color:#ddd;
+}
+
+body.dark-mode .card{
+    background:#222;
+    color:white;
+}
+
+body.dark-mode .bg-white{
+    background:#1b1b1b !important;
+}
+
+body.dark-mode footer{
+    background:#111;
+}
+
+body.dark-mode .badge{
+    background:#444;
+}
+
+body.dark-mode .btn-outline-dark{
+    border-color:white;
+    color:white;
+}
+
+body.dark-mode .btn-outline-dark:hover{
+    background:white;
+    color:black;
+}
 
 </style>
 
@@ -147,6 +198,9 @@ footer i{
 </button>
 
 <div class="collapse navbar-collapse" id="menu">
+<button id="theme-toggle" class="btn btn-outline-dark ms-lg-3">
+    <i class="bi bi-moon-fill"></i>
+</button>
 <ul class="navbar-nav ms-auto">
 
 <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí</a></li>
@@ -346,6 +400,24 @@ Contactarme
 AOS.init({
     duration:800,
     once:true
+});
+
+const toggle = document.getElementById("theme-toggle");
+
+toggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    const icon = toggle.querySelector("i");
+
+    if(document.body.classList.contains("dark-mode")){
+        icon.classList.remove("bi-moon-fill");
+        icon.classList.add("bi-sun-fill");
+    }else{
+        icon.classList.remove("bi-sun-fill");
+        icon.classList.add("bi-moon-fill");
+    }
+
 });
 </script>
 
