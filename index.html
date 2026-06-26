@@ -116,7 +116,17 @@ h2{
     font-size:0.95rem;
     font-weight:500;
 }
+.servicio-icono{
+    font-size: 3rem;
+    color: #222;
+    display: block;
+    margin-bottom: 18px;
+    transition: .3s;
+}
 
+.card:hover .servicio-icono{
+    transform: scale(1.1);
+}
 /* FOOTER */
 footer{
     background:#222;
@@ -180,61 +190,64 @@ body.dark-mode .btn-outline-dark:hover{
     background:white;
     color:black;
 }
+body.dark-mode .servicio-icono{
+    color: white;
+}
 
-</style>
+</style>​​
 
-</head>
+</head>​​
 
-<body>
+< cuerpo >
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg shadow-sm sticky-top">
-<div class="container">
+<!-- BARRA DE NAVEGACIÓN -->
+< nav  class = "navbar navbar-expand-lg shadow-sm sticky-top" >
+< div  class = "container" >
 
-<a class="navbar-brand fw-bold" href="#">Mel Dalmao</a>
+<a class="navbar-brand fw-bold" href="#"> Mel Dalmao </a>​ ​​​​​​​​ 
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
+< button  class = "navbar-toggler"  type = "button"  data-bs-toggle = "collapse"  data-bs-target = "#menu" >
+< span  class = "navbar-toggler-icon" > </ span >
+</ botón >
 
-<div class="collapse navbar-collapse" id="menu">
+< div  class = "contraer barra de navegación-contraer"  id = "menú" >
 
-<ul class="navbar-nav ms-auto">
+< ul  clase = "navbar-nav ms-auto" >
 
-<li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí</a></li>
-<li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-<li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-<li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-<li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-<button id="theme-toggle" class="btn btn-outline-dark ms-lg-3">
-    <i class="bi bi-moon-fill"></i>
-</button>
-</ul>
-</div>
+< li  class = "nav-item" > < a  class = "nav-link"  href = "#sobre" > Sobre mí </ a > </ li >
+< li  class = "nav-item" > < a  class = "nav-link"  href = "#servicios" > Servicios </ a > </ li >
+< li  class = "nav-item" > < a  class = "nav-link"  href = "#proyectos" > Proyectos </ a > </ li >
+< li  class = "nav-item" > < a  class = "nav-link"  href = "#habilidades" > Habilidades </ a > </ li >
+< li  class = "nav-item" > < a  class = "nav-link"  href = "#contacto" > Contacto </ a > </ li >
+< button  id = "theme-toggle"  class = "btn btn-outline-dark ms-lg-3" >
+    < i  class = " bi bi-moon-fill " > </i>
+</ botón >
+</ul>​​
+</div>​​
 
-</div>
-</nav>
+</div>​​
+</nav>​​
 
-<!-- HERO -->
-<section class="hero">
+<!-- HÉROE -->
+< section  class = "hero" >
 
-<div class="container">
+< div  class = "container" >
 
-<img src="yo.png" alt="Mel Dalmao">
+< img  src = "yo.png"  alt = "Mel Dalmao" >
 
-<h1 data-aos="fade-up">Marketing Digital</h1>
+< h1  data-aos = "fade-up" > Marketing Digital </ h1 >
 
-<p class="lead mt-4" data-aos="fade-up">
+< p  class = "lead mt-4"  data-aos = "fade-up" >
 Campañas publicitarias, diseño de contenido,
 branding y estrategias para redes sociales
 que impulsan marcas.
-</p>
+</p>​​
 
-<a href="#proyectos" class="btn btn-dark btn-lg mt-4" data-aos="zoom-in">
+<a href="#proyectos" class="btn btn-dark btn-lg mt-4" data-aos="zoom-in">​ ​​​ ​​​ ​​​​
 Ver Proyectos
-</a>
+</ a >
 
-</div>
+</div>​​
 
 </section>
 
@@ -261,7 +274,7 @@ Creo soluciones creativas y estratégicas para potenciar marcas mediante diseño
 
 <div class="col-md-4 mb-4">
 <div class="card p-4 text-center" data-aos="fade-up">
-<h2>📱</h2>
+<i class="bi bi-phone fs-1 mb-3 servicio-icono"></i>
 <h4>Redes Sociales</h4>
 <p>Planificación y gestión de contenido.</p>
 </div>
@@ -269,7 +282,7 @@ Creo soluciones creativas y estratégicas para potenciar marcas mediante diseño
 
 <div class="col-md-4 mb-4">
 <div class="card p-4 text-center" data-aos="fade-up" data-aos-delay="150">
-<h2>🎨</h2>
+<i class="bi bi-palette fs-1 mb-3 servicio-icono"></i>
 <h4>Diseño Gráfico</h4>
 <p>Piezas para redes y branding.</p>
 </div>
@@ -277,7 +290,7 @@ Creo soluciones creativas y estratégicas para potenciar marcas mediante diseño
 
 <div class="col-md-4 mb-4">
 <div class="card p-4 text-center" data-aos="fade-up" data-aos-delay="300">
-<h2>📢</h2>
+<i class="bi bi-megaphone fs-1 mb-3 servicio-icono"></i>
 <h4>Publicidad Digital</h4>
 <p>Campañas Meta Ads enfocadas en resultados.</p>
 </div>
